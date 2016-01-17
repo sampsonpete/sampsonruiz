@@ -1,0 +1,190 @@
+/* GLOBALS */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'archivo_blackregular';
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Increase base body font size for large screens */
+@media screen and (min-width: 100em) {
+	body {
+		font-size: 21px;
+	}
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1rem;
+	font-weight: normal;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+a:link,
+a:visited {
+	border-bottom: 0.125rem solid black;
+	color: black;
+}
+a:hover,
+a:active {
+	border-bottom-color: blue;
+	color: blue;
+}
+
+::selection {
+  background: blue;
+  color: white;
+}
+::-moz-selection {
+  background: blue;
+  color: white;
+}
+
+/* LAYOUT */
+.intro {
+	padding: 2rem;
+}
+
+.intro h1 {
+	max-width: 14rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main {
+	padding: 2rem;
+}
+
+.main__info {
+	margin: 0 auto;
+	max-width: 30rem;
+}
+
+@media screen and (min-width: 36em) {
+	.intro h1 {
+		max-width: 30rem;
+	}
+	/* Place addresses into columns */
+	.intro__addresses {
+		margin-right: 3rem;
+		margin-left: 3rem;
+	}
+	.intro__address {
+		float: left;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 62.5em) {
+    .intro {
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 50%;
+	}
+	
+	/* Vertically center the intro */
+	.intro > div {
+		position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+
+	.main {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+	}
+}
+
+/* TYPE AND SPACING */
+.intro {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.intro__date {
+	font-family: 'antoniobold';
+	font-size: 5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.intro__address:first-of-type {
+	margin-bottom: 2rem;
+}
+
+.main h3 {
+	margin-top: 3rem;
+}
+
+.main__contact {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 36em) {
+	.intro__date {
+		font-size: 8rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.intro__date {
+		font-size: 12rem;
+	}
+}
+
+@media screen and (min-width: 62.5em) {
+	.intro {
+		margin-top: 0;
+	}
+
+	.intro__date {
+		font-size: 8rem;
+	}
+}
+
+@media screen and (min-width: 80em) {
+	.intro__date {
+		font-size: 10rem;
+	}
+}
+
+/* CLEARFIX */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
