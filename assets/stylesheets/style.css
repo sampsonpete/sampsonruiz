@@ -152,6 +152,10 @@ a:active {
 	.intro__date {
 		font-size: 8rem;
 	}
+
+	.intro__address:first-of-type {
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (min-width: 48em) {
