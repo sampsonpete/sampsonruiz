@@ -148,6 +148,15 @@ a:active {
 	margin-bottom: 5rem;
 }
 
+.post {
+	border-top: 0.25rem solid black;
+	margin-bottom: 6rem;
+}
+
+.post h3:first-of-type {
+	margin-top: 1rem;
+}
+
 @media screen and (min-width: 36em) {
 	.intro__date {
 		font-size: 8rem;
@@ -178,6 +187,27 @@ a:active {
 	.intro__date {
 		font-size: 10rem;
 	}
+}
+
+/* Images */
+img {
+	max-width: 100%;
+}
+
+/*----------
+GIFT
+----------*/
+.post--gifts .main__image {
+	margin: 2rem 0;
+	width: 60%;
+}
+
+.post--gifts .main__image a {
+	border-bottom: 0;
+}
+
+.post--gifts .main__image p {
+	font-size: 0.75rem;
 }
 
 /* CLEARFIX */
