@@ -210,6 +210,10 @@ GIFT
 	font-size: 0.75rem;
 }
 
+.post--gifts .donatebutton {
+	width: 9.375rem;
+}
+
 /* CLEARFIX */
 .cf:before,
 .cf:after {
