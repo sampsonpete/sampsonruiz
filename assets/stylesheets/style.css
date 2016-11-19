@@ -226,3 +226,54 @@ GIFT
 .cf {
     *zoom: 1;
 }
+
+/*----------
+Thank you
+----------*/
+.state-thanks {
+	overflow: hidden;
+}
+.thanks-wrapper {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.thanks-inner-wrapper {
+	height: 100%;
+	width: 100%;
+}
+.thanks-image {
+	max-width: 800px;
+	width: 100%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) rotate(-8deg);
+}
+/*.thanks-wrapper {
+	background-color: #f85e1a;
+	position: absolute;
+	top: 6rem;
+	right: 4rem;
+	bottom: 6rem;
+	left: 4rem;
+	transform: rotate(-4deg);
+}
+.thanks-inner-wrapper-1 {
+	height: 100%;
+}
+.thanks-inner-wrapper-2 {
+	height: 100%;
+	width: 100%;
+}
+.thanks-wrapper h1 {
+	font-family: 'antoniobold';
+	font-size: 3rem;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+*/
